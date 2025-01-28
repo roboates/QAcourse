@@ -14,7 +14,7 @@ provider "azurerm" {
 
 terraform {
   backend "azurerm" {
-    resource_group_name  = "RG3"
+    resource_group_name  = "RG2"
     storage_account_name = "jenkinsstaterob"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
@@ -22,6 +22,6 @@ terraform {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "RG3"
+  name     = "RG2"
   location = "westeurope"
 }
